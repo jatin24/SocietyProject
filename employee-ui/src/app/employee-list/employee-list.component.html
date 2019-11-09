@@ -1,0 +1,27 @@
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Employee Id</th>
+          <th>Name</th>
+          <th>Designation</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employeeList">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.designation }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="messages">
+    <p>{{message}}</p>
+  </div>
+</div>
+
+<!-- 
+<br/>
+<div class="col-md-2" *ngIf="!showSpinner" >
+  <p-progressSpinner></p-progressSpinner>
+</div> -->

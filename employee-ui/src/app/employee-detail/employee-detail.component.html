@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  Employee Detail
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+<br/>
+  <form [formGroup] = "formdata" (ngSubmit) = "onSave()" class="form-employee">
+
+    <input type = "text" class = "idNumericBox" name = "id" placeholder = "Employee Id"
+         formControlName = "id" required [(ngModel)]="employee.id">
+    <br/>
+    <br/>
+    <input type = "text" class = "nameNumericBox" name = "name" placeholder = "Employee Name"
+         formControlName = "name" required [(ngModel)]="employee.name">
+    <br/>
+    <br/>
+    <input type = "text" class = "designationNumericBox" name = "designation" placeholder = "Employee Designation"
+         formControlName = "designation" required [(ngModel)]="employee.designation">
+    <br/>
+    <br/>
+    <input type="submit" [disabled]="!formdata.valid" class="saveEmployeeButton" value="Save">
+  </form>
+</body>
+</html>

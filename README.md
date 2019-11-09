@@ -13,7 +13,7 @@ There are two mdules under SocietyProject-
                     SocietyProject/employee/src/main/resources/application.properties 
                 c. It is configured with http by default.
                 d. REST SERVICE maintains a local cache to hold the employees.
-                e. It has all "CRUD operations".
+                e. It has all "CRUD operations" with unit test cases.
 
   2. employee-ui - This is a angular project. [UI for Employee Management]
   

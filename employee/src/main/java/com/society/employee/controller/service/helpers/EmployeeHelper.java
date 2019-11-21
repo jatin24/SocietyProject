@@ -29,7 +29,7 @@ public class EmployeeHelper {
 
 		int pos = -1;
 		for (int i = 0; i < employeeList.size(); i++) {
-			if (employeeList.get(0).getId() == id) {
+			if (employeeList.get(i).getId() == id) {
 				pos = i;
 				break;
 			}
@@ -50,7 +50,7 @@ public class EmployeeHelper {
 
 		int pos = -1;
 		for (int i = 0; i < employeeList.size(); i++) {
-			if (employeeList.get(0).getId() == id) {
+			if (employeeList.get(i).getId() == id) {
 				pos = i;
 				break;
 			}
